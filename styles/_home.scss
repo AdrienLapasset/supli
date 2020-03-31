@@ -35,11 +35,11 @@
 
 .landing {
   background-image: url("/assets/imgs/landing.png");
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50%;
   padding: 300px 0 0 275px;
+  margin-bottom: 100px;
 
   &__title {
     font-size: 55px;
@@ -49,5 +49,91 @@
   &__text {
     margin: 40px 0 30px;
     max-width: 452px;
+  }
+}
+
+.trust {
+  &__title {
+    font-size: 38px;
+    font-weight: 800;
+    color: $secondary;
+    text-align: center;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & > img {
+      margin: 0 15px;
+    }
+  }
+}
+
+.comment {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__textContainer {
+    margin-left: 100px;
+    text-align: right;
+  }
+  &__text {
+    font-size: 38px;
+    font-weight: 600;
+    color: $secondary;
+    b {
+      font-weight: 800;
+    }
+  }
+  &__signature {
+    margin-top: 40px;
+    font-size: 27px;
+    b {
+      font-weight: 800;
+      color: $secondary;
+    }
+  }
+}
+
+.features {
+  margin-top: 200px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 38px;
+      font-weight: 800;
+      color: $primary;
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 1.73;
+      margin-right: 160px;
+    }
+    &:last-child {
+      flex-direction: row-reverse;
+      margin-top: 186px;
+      .features__text {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+.cta {
+  height: 246px;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  p {
+    color: white;
+    margin-right: 30px;
+    font-size: 33px;
+    font-weight: 800;
   }
 }

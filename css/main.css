@@ -73,11 +73,11 @@ p {
 
 .landing {
   background-image: url("/assets/imgs/landing.png");
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50%;
   padding: 300px 0 0 275px;
+  margin-bottom: 100px;
 }
 
 .landing__title {
@@ -88,6 +88,130 @@ p {
 .landing__text {
   margin: 40px 0 30px;
   max-width: 452px;
+}
+
+.trust__title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #030668;
+  text-align: center;
+}
+
+.trust__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trust__logos > img {
+  margin: 0 15px;
+}
+
+.comment {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment__textContainer {
+  margin-left: 100px;
+  text-align: right;
+}
+
+.comment__text {
+  font-size: 38px;
+  font-weight: 600;
+  color: #030668;
+}
+
+.comment__text b {
+  font-weight: 800;
+}
+
+.comment__signature {
+  margin-top: 40px;
+  font-size: 27px;
+}
+
+.comment__signature b {
+  font-weight: 800;
+  color: #030668;
+}
+
+.features {
+  margin-top: 200px;
+}
+
+.features__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features__row h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #397eff;
+  margin-bottom: 30px;
+}
+
+.features__row p {
+  line-height: 1.73;
+  margin-right: 160px;
+}
+
+.features__row:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 186px;
+}
+
+.features__row:last-child .features__text {
+  margin-left: 50px;
+}
+
+.cta {
+  height: 246px;
+  background-color: #030668;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+}
+
+.cta p {
+  color: white;
+  margin-right: 30px;
+  font-size: 33px;
+  font-weight: 800;
 }
 
 .btn {
