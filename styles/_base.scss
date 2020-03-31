@@ -9,17 +9,19 @@ html {
 	font-family: "Raleway", sans-serif;
 }
 
-h2,
 p,
 a {
-	font-size: 18px;
-
-	@include md {
-		font-size: 24px;
-	}
+	font-size: 22px;
+	font-weight: 600;
 }
 
 a {
-	color: black;
-	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	display: inline-block;
+}
+
+p {
+	color: $black;
 }

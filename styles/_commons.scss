@@ -1,0 +1,9 @@
+.btn {
+  color: white;
+  background-color: $primary;
+  padding: 25px 41px;
+  border-radius: 35px 35px 0 35px;
+  &--cornerRight {
+    border-radius: 35px 35px 35px 0;
+  }
+}
