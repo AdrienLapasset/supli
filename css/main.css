@@ -289,21 +289,39 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .comment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.comment__avatarContainer {
+  position: relative;
+}
+
+.comment__shape {
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .comment__shape {
+    display: none;
   }
 }
 
 .comment__img {
+  top: 60px;
+  right: -40px;
+  position: absolute;
   width: 237px;
 }
 
@@ -318,7 +336,16 @@ p {
   text-align: right;
 }
 
+@media (max-width: 1200px) {
+  .comment__textContainer {
+    margin-left: 0;
+    padding: 0 65px;
+    max-width: 433px;
+  }
+}
+
 .comment__text {
+  position: relative;
   font-size: 35px;
   font-weight: 600;
   color: #030668;
@@ -326,6 +353,13 @@ p {
 
 .comment__text b {
   font-weight: 800;
+}
+
+@media (max-width: 1200px) {
+  .comment__text {
+    text-align: left;
+    font-size: 18px;
+  }
 }
 
 .comment__signature {
@@ -336,6 +370,51 @@ p {
 .comment__signature b {
   font-weight: 800;
   color: #030668;
+}
+
+@media (max-width: 1200px) {
+  .comment__signature {
+    font-size: 15px;
+  }
+}
+
+.comment__quoteMark {
+  position: absolute;
+  width: 46px;
+}
+
+@media (max-width: 1200px) {
+  .comment__quoteMark {
+    width: 34px;
+  }
+}
+
+.comment__quoteMark:first-of-type {
+  top: -27px;
+  left: -32px;
+}
+
+@media (max-width: 1200px) {
+  .comment__quoteMark:first-of-type {
+    top: -37px;
+    left: unset;
+    right: 0;
+  }
+}
+
+.comment__quoteMark:last-of-type {
+  bottom: -30px;
+  right: -75px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 1200px) {
+  .comment__quoteMark:last-of-type {
+    right: unset;
+    left: 0;
+    bottom: -40px;
+  }
 }
 
 .features {
