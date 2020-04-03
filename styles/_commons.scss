@@ -6,4 +6,8 @@
   &--cornerRight {
     border-radius: 35px 35px 35px 0;
   }
+  @include xl {
+    font-size: 15px;
+    padding: 15px 25px;
+  }
 }
