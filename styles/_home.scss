@@ -127,14 +127,29 @@
     font-weight: 800;
     color: $secondary;
     text-align: center;
+    margin-bottom: 40px;
+    @include md {
+      font-size: 20px;
+    }
   }
   &__logos {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    & > img {
+    & > div {
       margin: 0 15px;
+      @include md {
+        flex: 0 0 50%;
+        margin: 0 0 50px;
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
