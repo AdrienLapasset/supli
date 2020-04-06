@@ -12,6 +12,18 @@
   & > * {
     flex-direction: row;
   }
+  &__logo-black {
+    @include md {
+      display: none;
+    }
+  }
+  &__logo-white {
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+
   &__links {
     @include md {
       display: none;
@@ -139,13 +151,16 @@
     flex-wrap: wrap;
     & > div {
       margin: 0 15px;
-      @include md {
-        flex: 0 0 50%;
+      @include xxl {
+        flex: 0 0 33%;
         margin: 0 0 50px;
         display: flex;
         justify-content: center;
         padding: 0 15px;
         box-sizing: border-box;
+      }
+      @include md {
+        flex: 0 0 50%;
       }
       img {
         max-width: 100%;
@@ -167,12 +182,26 @@
   }
   &__avatarContainer {
     position: relative;
+    @include xl {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 100px;
+    }
   }
   &__shape {
     left: 0;
     z-index: -1;
     @include xl {
       display: none;
+    }
+    &--mobile {
+      display: none;
+      @include xl {
+        top: -20px;
+        position: absolute;
+        display: block;
+      }
     }
   }
   &__img {
@@ -181,16 +210,18 @@
     position: absolute;
     width: 237px;
     @include xl {
-      // left: 200px;
-    }
-    @include md {
+      top: unset;
+      right: unset;
+      position: relative;
       width: 122px;
     }
   }
   &__textContainer {
     margin-left: 100px;
     text-align: right;
+    padding-right: 20px;
     @include xl {
+      padding-right: 20px;
       margin-left: 0;
       padding: 0 65px;
       max-width: 433px;
@@ -204,6 +235,9 @@
     b {
       font-weight: 800;
     }
+    @include xxl {
+      font-size: 18px;
+    }
     @include xl {
       text-align: left;
       font-size: 18px;
@@ -216,7 +250,7 @@
       font-weight: 800;
       color: $secondary;
     }
-    @include xl {
+    @include xxl {
       font-size: 15px;
     }
   }
@@ -316,29 +350,32 @@
     @include md {
       display: block;
     }
-  }
-}
+    &__navContainer {
+      display: none !important;
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 12px;
+        height: 12px;
+        opacity: 0.5;
+        border-radius: 2px;
+        background-color: $primary;
+        border: none;
+        margin-right: 33px;
+        outline: none;
 
-.tns-nav {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  button {
-    width: 12px;
-    height: 12px;
-    opacity: 0.5;
-    border-radius: 2px;
-    background-color: $primary;
-    border: none;
-    margin-right: 33px;
-    outline: none;
-
-    &.tns-nav-active {
-      width: 17px;
-      height: 17px;
-      border-radius: 3px;
-      opacity: 1;
+        &.tns-nav-active {
+          width: 17px;
+          height: 17px;
+          border-radius: 3px;
+          opacity: 1;
+        }
+      }
+      @include md {
+        display: flex;
+      }
     }
   }
 }
