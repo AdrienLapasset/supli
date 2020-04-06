@@ -155,12 +155,15 @@
 }
 
 .comment {
-  margin-top: 200px;
+  padding-top: 200px;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
+
   @include xl {
     flex-direction: column;
     align-items: center;
+    overflow-x: visible;
   }
   &__avatarContainer {
     position: relative;
@@ -247,15 +250,21 @@
 
 .features {
   margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
   &__row {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    @include xxl {
+      flex-direction: column;
+    }
+
     & > * {
       flex: 0 1 50%;
-    }
-    img {
-      width: 100%;
     }
     h2 {
       font-size: 35px;
@@ -266,16 +275,40 @@
     p {
       line-height: 1.73;
       margin-right: 160px;
+      @include xxl {
+        margin-right: 0;
+      }
     }
     &:last-child {
       flex-direction: row-reverse;
       margin-top: 186px;
+      @include xxl {
+        flex-direction: column-reverse;
+      }
       .features__text {
         margin-left: 50px;
+        @include xxl {
+          margin-left: 0;
+        }
       }
       img {
-        // max-width: 868px;
+        max-width: 868px;
       }
+    }
+  }
+  &__firstImg {
+    max-width: 639px;
+    @include xxl {
+      display: none;
+    }
+  }
+  &__shape {
+    position: absolute;
+    right: -260px;
+    top: 120px;
+    z-index: -1;
+    @include xxl {
+      display: none;
     }
   }
 }
@@ -287,10 +320,20 @@
   justify-content: center;
   align-items: center;
   margin-top: 200px;
+  @include xxl {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px 50px;
+  }
   p {
     color: white;
     margin-right: 30px;
     font-size: 33px;
     font-weight: 800;
+    @include xxl {
+      font-size: 18px;
+      margin: 0 0 34px;
+      text-align: center;
+    }
   }
 }
