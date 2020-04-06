@@ -534,6 +534,47 @@ p {
   }
 }
 
+.features__slider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .features__slider {
+    display: block;
+  }
+}
+
+.tns-nav {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tns-nav button {
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  border-radius: 2px;
+  background-color: #397eff;
+  border: none;
+  margin-right: 33px;
+  outline: none;
+}
+
+.tns-nav button.tns-nav-active {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  opacity: 1;
+}
+
 .cta {
   height: 246px;
   background-color: #030668;
