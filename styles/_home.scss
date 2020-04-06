@@ -585,7 +585,7 @@
     border-bottom: 1px solid rgba(67, 68, 73, 0.23);
     padding-bottom: 8px;
   }
-  br {
+  &__br {
     display: none;
     @include lg {
       display: block;

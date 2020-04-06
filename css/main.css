@@ -1010,12 +1010,12 @@ p {
   padding-bottom: 8px;
 }
 
-.footer br {
+.footer__br {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .footer br {
+  .footer__br {
     display: block;
   }
 }
