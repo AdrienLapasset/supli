@@ -413,6 +413,7 @@
     flex-direction: column;
     height: auto;
     padding: 40px 20px 50px;
+    margin-top: 116px;
   }
   p {
     color: white;
@@ -477,14 +478,123 @@
 .partner {
   margin-top: 180px;
   display: flex;
+  @include xxl {
+    flex-direction: column;
+  }
   img {
     margin-right: 110px;
+    max-width: 833px;
+    width: 100%;
+    @include xxl {
+      right: 40px;
+      position: relative;
+    }
   }
   &__title {
     font-size: 35px;
     color: $secondary;
+    @include xxl {
+      padding: 0 64px;
+      margin-top: 54px;
+    }
   }
   &__text {
     margin: 10px 0 45px;
+    padding: 0 20px 0;
+    @include xxl {
+      padding: 0 64px;
+      margin: 30px 0 0;
+    }
+  }
+  .btn {
+    @include xxl {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  margin-top: 133px;
+  padding: 0 20px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    &:last-child {
+      margin: 115px 0 46px;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-right: 30px;
+        @include lg {
+          margin-bottom: 20px;
+        }
+      }
+      @include lg {
+        text-align: center;
+        margin: 80px 0 32px;
+      }
+    }
+    @include lg {
+      flex-direction: column;
+    }
+  }
+
+  &__app {
+    margin-top: 30px;
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 33px;
+      }
+    }
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+      @include lg {
+        align-items: center;
+      }
+    }
+    &:last-child {
+      align-items: flex-end;
+      @include lg {
+        margin-top: 30px;
+        align-items: flex-start;
+      }
+    }
+    @include lg {
+      margin-top: 30px;
+    }
+  }
+  &__link {
+    color: $black;
+  }
+  &__logo {
+    &--zepros {
+      width: 86px;
+      margin: 11px 0;
+    }
+    &--cheque {
+      width: 101px;
+    }
+  }
+  &__underligned {
+    border-bottom: 1px solid rgba(67, 68, 73, 0.23);
+    padding-bottom: 8px;
+  }
+  br {
+    display: none;
+    @include lg {
+      display: block;
+    }
+  }
+  span {
+    display: inline-block;
+    @include lg {
+      display: none;
+    }
   }
 }
