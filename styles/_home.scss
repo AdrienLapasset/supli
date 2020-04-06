@@ -429,6 +429,7 @@
 
 .why {
   text-align: center;
+  padding: 0 20px;
   &__points-container {
     display: flex;
     justify-content: space-between;
@@ -470,5 +471,20 @@
       font-size: 20px;
       margin-top: 10px;
     }
+  }
+}
+
+.partner {
+  margin-top: 180px;
+  display: flex;
+  img {
+    margin-right: 110px;
+  }
+  &__title {
+    font-size: 35px;
+    color: $secondary;
+  }
+  &__text {
+    margin: 10px 0 45px;
   }
 }

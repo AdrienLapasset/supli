@@ -3,6 +3,7 @@
   background-color: $primary;
   padding: 25px 41px;
   border-radius: 35px 35px 0 35px;
+  font-size: 20px;
   &--cornerRight {
     border-radius: 35px 35px 35px 0;
   }
@@ -15,5 +16,5 @@
 .container {
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
