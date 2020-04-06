@@ -426,3 +426,49 @@
     }
   }
 }
+
+.why {
+  text-align: center;
+  &__points-container {
+    display: flex;
+    justify-content: space-between;
+    @include xl {
+      flex-direction: column;
+    }
+  }
+  &__point {
+    margin-bottom: 60px;
+    img {
+      @include xl {
+        width: 63px;
+      }
+    }
+  }
+  &__title {
+    margin: 193px 0 140px;
+    color: $primary;
+    font-size: 35px;
+    line-height: 1.24;
+    @include xl {
+      margin: 120px 0 60px;
+      font-size: 25px;
+    }
+    @include sm {
+      text-align: left;
+    }
+  }
+  &__text {
+    margin-top: 40px;
+    font-size: 28px;
+    line-height: 1.39;
+    @include xl {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    &--italic {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+}
