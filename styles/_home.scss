@@ -288,7 +288,7 @@
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  &__row {
+  &__row-offer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,38 +296,57 @@
     @include xxl {
       flex-direction: column;
     }
-
     & > * {
       flex: 0 1 50%;
     }
-    h2 {
-      font-size: 35px;
-      font-weight: 800;
-      color: $primary;
-      margin-bottom: 30px;
+  }
+  &__row-manage {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 186px;
+    display: flex;
+    flex-direction: row-reverse;
+    & > * {
+      flex: 0 1 50%;
     }
-    p {
-      line-height: 1.73;
-      margin-right: 160px;
+    img {
+      max-width: 868px;
       @include xxl {
-        margin-right: 0;
+        transform: translateX(-200px);
+        margin-bottom: 50px;
       }
     }
-    &:last-child {
-      flex-direction: row-reverse;
-      margin-top: 186px;
+    @include xxl {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    .features__text {
+      margin-left: 50px;
       @include xxl {
-        flex-direction: column-reverse;
+        margin-left: 0;
       }
-      .features__text {
-        margin-left: 50px;
-        @include xxl {
-          margin-left: 0;
-        }
-      }
-      img {
-        max-width: 868px;
-      }
+    }
+  }
+  &__text {
+    @include xxl {
+      padding: 0 50px;
+    }
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: $primary;
+    margin-bottom: 30px;
+    @include xxl {
+      font-size: 25px;
+    }
+  }
+  p {
+    line-height: 1.73;
+    margin-right: 160px;
+    @include xxl {
+      margin-right: 0;
     }
   }
   &__firstImg {
@@ -347,12 +366,12 @@
   }
   &__slider {
     display: none;
-    @include md {
+    @include xxl {
       display: block;
     }
     &__navContainer {
       display: none !important;
-      margin-top: 25px;
+      margin: 25px 0 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -363,8 +382,11 @@
         border-radius: 2px;
         background-color: $primary;
         border: none;
-        margin-right: 33px;
         outline: none;
+
+        &:not(:last-child) {
+          margin-right: 33px;
+        }
 
         &.tns-nav-active {
           width: 17px;
@@ -373,8 +395,8 @@
           opacity: 1;
         }
       }
-      @include md {
-        display: flex;
+      @include xxl {
+        display: flex !important;
       }
     }
   }
