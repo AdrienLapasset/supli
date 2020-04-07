@@ -31,6 +31,10 @@ p {
   color: #434449;
 }
 
+button {
+  border: none;
+}
+
 .btn {
   color: white;
   background-color: #397eff;
@@ -926,6 +930,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (max-width: 1450px) {
@@ -938,6 +945,9 @@ p {
 }
 
 .partner img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   margin-right: 110px;
   max-width: 833px;
   width: 100%;
@@ -948,6 +958,12 @@ p {
     right: 40px;
     position: relative;
   }
+}
+
+.partner__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
 .partner__title {
@@ -1034,6 +1050,10 @@ p {
   margin-top: 30px;
 }
 
+.footer__app img {
+  margin-right: 25px;
+}
+
 @media (max-width: 576px) {
   .footer__app {
     display: -webkit-box;
@@ -1062,8 +1082,19 @@ p {
           flex-direction: column;
 }
 
+.footer__col:first-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @media (max-width: 992px) {
   .footer__col:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1127,5 +1158,9 @@ p {
   .footer span {
     display: none;
   }
+}
+
+.footer__france-flag {
+  padding: 17px 22px 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
