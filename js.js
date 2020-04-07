@@ -11,6 +11,6 @@ var slider = tns({
   arrowKeys: true,
   gutter: 40,
   navAsThumbnails: true,
-  navContainer: ".features__slider__navContainer"
+  navContainer: ".features__slider__navContainer",
   // fixedWidth: 190,
 });
