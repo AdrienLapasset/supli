@@ -18,19 +18,29 @@ $(document).ready(function () {
   });
 
 
-  var logos = $('.trust__logos');
+  // var logos = $('.trust__logos');
 
   $(window).scroll(function () {
-    var top_of_element = logos.offset().top;
-    var bottom_of_element = logos.offset().top + logos.outerHeight();
+    isVisible($('.trust__logos'))
+    isVisible($('.comment'))
+    isVisible($('.features'))
+    isVisible($('.features__row-manage'))
+    isVisible($('#cta-one'))
+    isVisible($('#cta-two'))
+    isVisible($('.why'))
+    isVisible($('.partner'))
+  });
+
+
+  var isVisible = function (el) {
+    var top_of_element = el.offset().top;
+    var bottom_of_element = el.offset().top + el.outerHeight();
     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     var top_of_screen = $(window).scrollTop();
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-      logos.addClass("trust__logos--show");
+      el.addClass("show");
     } else {
     }
-  });
-
-
+  }
 })

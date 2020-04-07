@@ -1,3 +1,7 @@
+.show:not(.trust__logos) {
+  animation: fadeFromBottom 0.8s 0.8s forwards;
+}
+
 @mixin animationDelay($delayFrom, $itemsNumber) {
   $i: 1;
   @for $i from 1 through $itemsNumber {
@@ -15,6 +19,37 @@
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromLeft {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromRight {
+  from {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

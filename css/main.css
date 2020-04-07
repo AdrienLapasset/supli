@@ -59,6 +59,11 @@ button {
   margin: 0 auto;
 }
 
+.show:not(.trust__logos) {
+  -webkit-animation: fadeFromBottom 0.8s 0.8s forwards;
+          animation: fadeFromBottom 0.8s 0.8s forwards;
+}
+
 @-webkit-keyframes fadeFromBottom {
   from {
     -webkit-transform: translateY(10px);
@@ -81,6 +86,76 @@ button {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeFromLeft {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromLeft {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeFromRight {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromRight {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
@@ -248,6 +323,27 @@ button {
   }
 }
 
+.landing__cta-wrapper > * {
+  opacity: 0;
+  -webkit-animation: fadeFromLeft 0.8s forwards;
+          animation: fadeFromLeft 0.8s forwards;
+}
+
+.landing__cta-wrapper > *:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.landing__cta-wrapper > *:nth-child(2) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.landing__cta-wrapper > *:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
 @media (max-width: 768px) {
   .landing__cta-wrapper {
     display: -webkit-box;
@@ -391,42 +487,43 @@ button {
   max-width: 100%;
 }
 
-.trust__logos--show > div {
+.trust__logos.show > div {
   -webkit-animation: fadeFromBottom 0.8s forwards;
           animation: fadeFromBottom 0.8s forwards;
 }
 
-.trust__logos--show > div:nth-child(1) {
+.trust__logos.show > div:nth-child(1) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.trust__logos--show > div:nth-child(2) {
+.trust__logos.show > div:nth-child(2) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.trust__logos--show > div:nth-child(3) {
+.trust__logos.show > div:nth-child(3) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.trust__logos--show > div:nth-child(4) {
+.trust__logos.show > div:nth-child(4) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.trust__logos--show > div:nth-child(5) {
+.trust__logos.show > div:nth-child(5) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.trust__logos--show > div:nth-child(6) {
+.trust__logos.show > div:nth-child(6) {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
 }
 
 .comment {
+  opacity: 0;
   padding-top: 150px;
 }
 
@@ -592,6 +689,7 @@ button {
 }
 
 .features {
+  opacity: 0;
   position: relative;
   margin-top: 200px;
   display: -webkit-box;
@@ -658,6 +756,7 @@ button {
 }
 
 .features__row-manage {
+  opacity: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -810,6 +909,7 @@ button {
 }
 
 .cta {
+  opacity: 0;
   height: 246px;
   background-color: #030668;
   display: -webkit-box;
@@ -852,6 +952,7 @@ button {
 }
 
 .why {
+  opacity: 0;
   text-align: center;
   padding: 0 20px;
 }
@@ -923,6 +1024,7 @@ button {
 }
 
 .partner {
+  opacity: 0;
   margin-top: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,6 +1099,12 @@ button {
 .footer {
   margin-top: 133px;
   padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    margin-top: 60px;
+  }
 }
 
 .footer__row {
