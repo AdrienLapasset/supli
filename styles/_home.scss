@@ -150,6 +150,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     & > div {
+      opacity: 0;
       margin: 0 15px;
       @include xxl {
         flex: 0 0 33%;
@@ -164,6 +165,12 @@
       }
       img {
         max-width: 100%;
+      }
+    }
+    &--show {
+      & > div {
+        animation: fadeFromBottom 0.8s forwards;
+        @include animationDelay(0.4, 6);
       }
     }
   }
