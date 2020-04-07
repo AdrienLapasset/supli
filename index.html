@@ -75,75 +75,76 @@
   <!-- End Trust -->
 
   <!-- Comment -->
-  <section class="comment container">
-    <div class="comment__avatarContainer">
-      <img class="comment__shape" src="/assets/imgs/comment-shape.svg" alt="Illustration">
-      <img class="comment__shape comment__shape--mobile" src="/assets/imgs/comment-shape-mobile.svg" alt="Illustration">
-      <img class="comment__img" src="/assets/imgs/comment.png" alt="S. Lelu, DAF, Grande Boucherie Première (Rungis)">
-    </div>
-    <div class="comment__textContainer">
-      <h2 class="comment__text">
-        <img class="comment__quoteMark" src="/assets/imgs/quote.png">
-        Supli nous a permis de <b>simplifier le traitement<br />
-          des commandes, présenter nos produits en ligne</b><br />
-        et <b>faire gagner du temps à nos équipes</b>.<br />
-        Avec l’application de commande<br />
-        nos clients sont satisfaits, il y a moins d’erreurs.<br />
-        Le <b>développement commercial peut s'intensifier</b> !
-        <img class="comment__quoteMark" src="/assets/imgs/quote.png">
-      </h2>
-      <p class="comment__signature">
-        <b>S. Lelu</b><br />
-        DAF, Grande Boucherie Première<br />
-        (Rungis)<br />
-      </p>
+  <section class="comment">
+    <img class="comment__shape" src="/assets/imgs/comment-shape.svg" alt="Illustration">
+    <img class="comment__shape comment__shape--mobile" src="/assets/imgs/comment-shape-mobile.svg" alt="Illustration">
+    <div class="container">
+      <div class="comment__avatarContainer">
+        <img class="comment__img" src="/assets/imgs/comment.png" alt="S. Lelu, DAF, Grande Boucherie Première (Rungis)">
+      </div>
+      <div class="comment__textContainer">
+        <h2 class="comment__text">
+          <span class="comment__quoteMark">“</span>
+          Supli nous a permis de <b>simplifier le traitement<br />
+            des commandes, présenter nos produits en ligne</b><br />
+          et <b>faire gagner du temps à nos équipes</b>.<br />
+          Avec l’application de commande<br />
+          nos clients sont satisfaits, il y a moins d’erreurs.<br />
+          Le <b>développement commercial peut s'intensifier</b> !
+          <span class="comment__quoteMark">”</span>
+        </h2>
+        <p class="comment__signature">
+          <b>S. Lelu</b><br />
+          DAF, Grande Boucherie Première<br />
+          (Rungis)<br />
+        </p>
+      </div>
     </div>
   </section>
   <!-- End Comment -->
 
   <!-- Features -->
-  <section class="features container">
-
+  <section class="features">
+    <img class="features__shape" src="/assets/imgs/features-shape.svg" alt="Illustration">
     <div class="features__slider">
-      <img src="/assets/imgs/slider/commande-fournisseurs.jpg" alt="Commande fournisseurs">
-      <img src="/assets/imgs/slider/liste-produits-fournisseurs.jpg" alt="Liste produits fournisseurs">
-      <img src="/assets/imgs/slider/selection-conditionnement-produit.jpg" alt="Sélection conditionnement produit">
+      <img src="/assets/imgs/slider/commande-fournisseurs.png" alt="Commande fournisseurs">
+      <img src="/assets/imgs/slider/liste-produits-fournisseurs.png" alt="Liste produits fournisseurs">
+      <img src="/assets/imgs/slider/selection-conditionnement-produit.png" alt="Sélection conditionnement produit">
     </div>
     <div class="features__slider__navContainer">
       <button></button>
       <button></button>
       <button></button>
     </div>
-
-
-    <div class="features__row-offer">
-      <div class="features__text">
-        <h2>Offrez la commande<br />
-          en ligne à vos clients</h2>
-        <p>Une application de commandes efficace et innovante<br />
-          Votre catalogue produit personnalisé par client<br />
-          Une communication directe et simplifiée<br />
-          Un historique centralisé des commandes
-        </p>
+    <div class="container">
+      <div class="features__row-offer">
+        <div class="features__text">
+          <h2>Offrez la commande<br />
+            en ligne à vos clients</h2>
+          <p>Une application de commandes efficace et innovante<br />
+            Votre catalogue produit personnalisé par client<br />
+            Une communication directe et simplifiée<br />
+            Un historique centralisé des commandes
+          </p>
+        </div>
+        <div>
+          <img class="features__firstImg" src="/assets/imgs/mobile.png" alt="Commande en ligne">
+        </div>
       </div>
-      <div>
-        <img class="features__firstImg" src="/assets/imgs/mobile.jpg" alt="Commande en ligne">
-        <img class="features__shape" src="/assets/imgs/features-shape.svg" alt="Illustration">
-      </div>
-    </div>
-    <div class="features__row-manage">
-      <div class="features__text">
-        <h2>Gérez votre activité<br />
-          avec efficacité</h2>
-        <p>Un traitement de commandes plus efficace<br />
-          Un affichage personnalisé de vos produits<br />
-          L’analyse des commandes<br />
-          L’analyse des tendances commerciales<br />
-          L’intégration avec votre logiciel de gestion
-        </p>
-      </div>
-      <div>
-        <img src="/assets/imgs/web-app.jpg" alt="Commande en ligne">
+      <div class="features__row-manage">
+        <div class="features__text">
+          <h2>Gérez votre activité<br />
+            avec efficacité</h2>
+          <p>Un traitement de commandes plus efficace<br />
+            Un affichage personnalisé de vos produits<br />
+            L’analyse des commandes<br />
+            L’analyse des tendances commerciales<br />
+            L’intégration avec votre logiciel de gestion
+          </p>
+        </div>
+        <div>
+          <img src="/assets/imgs/web-app.jpg" alt="Commande en ligne">
+        </div>
       </div>
     </div>
   </section>
@@ -251,6 +252,8 @@
 
 
 </body>
+
+<!-- JS Librairies -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="js.js"></script>
