@@ -10,7 +10,8 @@ html {
 }
 
 p,
-a {
+a,
+button {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.45;
@@ -31,4 +32,5 @@ p {
 
 button {
 	border: none;
+	background-color: unset;
 }
