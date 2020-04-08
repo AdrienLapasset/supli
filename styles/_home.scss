@@ -189,7 +189,7 @@
     padding-top: 60px;
     display: flex;
     justify-content: center;
-    @include xxl {
+    @include xl {
       flex-direction: column;
       align-items: center;
       padding-top: 20px;
@@ -198,7 +198,7 @@
 
   &__avatarContainer {
     position: relative;
-    @include xxl {
+    @include xl {
       width: 300px;
       display: flex;
       justify-content: center;
@@ -220,7 +220,7 @@
   }
   &__img {
     width: 237px;
-    @include xxl {
+    @include xl {
       width: 122px;
     }
   }
@@ -228,7 +228,7 @@
     margin-left: 100px;
     text-align: right;
     padding-right: 20px;
-    @include xxl {
+    @include xl {
       padding-right: 20px;
       margin-left: 0;
       padding: 0 65px;
@@ -243,7 +243,7 @@
     b {
       font-weight: 800;
     }
-    @include xxl {
+    @include xl {
       text-align: left;
       font-size: 18px;
     }
@@ -255,7 +255,7 @@
       font-weight: 800;
       color: $secondary;
     }
-    @include xxl {
+    @include xl {
       font-size: 15px;
     }
   }
@@ -264,13 +264,13 @@
     font-size: 100px;
     color: $grey;
     font-weight: 800;
-    @include xxl {
+    @include xl {
       font-size: 60px;
     }
     &:first-of-type {
       top: -27px;
       left: -12px;
-      @include xxl {
+      @include xl {
         transform: rotate(180deg);
         top: -65px;
         left: unset;
@@ -280,7 +280,7 @@
     &:last-of-type {
       bottom: -100px;
       right: -75px;
-      @include xxl {
+      @include xl {
         right: unset;
         left: 0;
         bottom: -70px;
@@ -305,7 +305,7 @@
     position: relative;
     padding-right: 20px;
 
-    @include xl {
+    @include lg {
       flex-direction: column;
       padding-right: 0px;
     }
@@ -314,14 +314,14 @@
     }
     p {
       margin-right: 130px;
-      @include xl {
+      @include lg {
         margin-right: 0;
       }
     }
 
     .features__text {
       padding: 0 0 0 20px;
-      @include xl {
+      @include lg {
         padding: 0 50px;
       }
     }
@@ -342,18 +342,18 @@
       max-width: 868px;
       min-width: 350px;
       width: 100%;
-      @include xl {
+      @include lg {
         transform: translateX(-50px);
         margin-bottom: 50px;
       }
     }
-    @include xl {
+    @include lg {
       flex-direction: column-reverse;
       width: 100%;
     }
     .features__text {
       padding: 0 20px 0 50px;
-      @include xl {
+      @include lg {
         padding: 0 50px;
       }
     }
@@ -364,7 +364,7 @@
     font-weight: 800;
     color: $primary;
     margin-bottom: 30px;
-    @include xxl {
+    @include lg {
       font-size: 25px;
     }
   }
@@ -373,7 +373,7 @@
   }
   &__firstImg {
     max-width: 639px;
-    @include xl {
+    @include lg {
       display: none;
     }
   }
@@ -382,14 +382,14 @@
     right: 0px;
     top: 120px;
     z-index: -1;
-    @include xl {
+    @include lg {
       top: 20px;
       width: 200px;
     }
   }
   &__slider {
     display: none;
-    @include xl {
+    @include lg {
       display: block;
     }
     &__navContainer {
@@ -418,7 +418,7 @@
           opacity: 1;
         }
       }
-      @include xl {
+      @include lg {
         display: flex !important;
       }
     }
@@ -505,7 +505,7 @@
   margin-top: 180px;
   display: flex;
   align-items: flex-start;
-  @include xxl {
+  @include xl {
     flex-direction: column;
   }
   img {
@@ -513,7 +513,7 @@
     margin-right: 110px;
     max-width: 833px;
     width: 100%;
-    @include xxl {
+    @include xl {
       right: 40px;
       position: relative;
     }
@@ -524,7 +524,7 @@
   &__title {
     font-size: 35px;
     color: $secondary;
-    @include xxl {
+    @include xl {
       padding: 0 64px;
       margin-top: 54px;
       font-size: 25px;
@@ -533,13 +533,13 @@
   &__text {
     margin: 10px 0 45px;
     padding: 0 20px 0;
-    @include xxl {
+    @include xl {
       padding: 0 64px;
       margin: 30px 0 0;
     }
   }
   .btn {
-    @include xxl {
+    @include xl {
       display: none;
     }
   }
