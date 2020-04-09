@@ -720,7 +720,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-x: hidden;
 }
 
 @media (max-width: 992px) {
@@ -844,9 +843,11 @@ button {
   }
 }
 
-.features__row-manage__img-container {
-  width: 100vw;
-  overflow: hidden;
+@media (max-width: 992px) {
+  .features__row-manage__img-container {
+    width: 100vw;
+    overflow: hidden;
+  }
 }
 
 .features h2 {
