@@ -458,6 +458,15 @@ button {
 }
 
 .trust__logos > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 0;
   margin: 0 15px;
 }
@@ -480,7 +489,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .trust__logos > div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -850,6 +859,7 @@ button {
 @media (max-width: 992px) {
   .features h2 {
     font-size: 25px;
+    margin-bottom: 15px;
   }
 }
 

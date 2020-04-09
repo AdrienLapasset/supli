@@ -155,6 +155,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
     & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       opacity: 0;
       margin: 0 15px;
       @include xxl {
@@ -165,7 +168,7 @@
         padding: 0 15px;
         box-sizing: border-box;
       }
-      @include md {
+      @include sm {
         flex: 0 0 50%;
       }
       img {
@@ -381,6 +384,7 @@
     margin-bottom: 30px;
     @include lg {
       font-size: 25px;
+      margin-bottom: 15px;
     }
   }
   p {
