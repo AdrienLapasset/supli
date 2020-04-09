@@ -36,6 +36,8 @@ p {
 button {
   border: none;
   background-color: unset;
+  cursor: pointer;
+  outline: none;
 }
 
 .btn {
@@ -263,21 +265,21 @@ button {
           transform: translateX(10px);
 }
 
-.header button {
+.header a {
   font-size: 18px;
   color: white;
   margin-left: 50px;
 }
 
 @media (max-width: 1200px) {
-  .header button {
+  .header a {
     font-size: 15px;
     margin-left: 20px;
   }
 }
 
 @media (max-width: 992px) {
-  .header button {
+  .header a {
     margin-left: 5px;
   }
 }
@@ -1046,26 +1048,38 @@ button {
   }
 }
 
-.partner img {
+.partner__img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  margin-right: 110px;
-  max-width: 833px;
-  width: 100%;
 }
 
 @media (max-width: 1200px) {
-  .partner img {
+  .partner__img {
     right: 40px;
     position: relative;
   }
 }
 
+.partner__img img {
+  max-width: 833px;
+  width: 100%;
+}
+
 .partner__description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  padding: 0 20px 0 100px;
+  margin-top: 54px;
+}
+
+@media (max-width: 1200px) {
+  .partner__description {
+    padding: 0 20px 0;
+  }
 }
 
 .partner__title {
@@ -1076,14 +1090,12 @@ button {
 @media (max-width: 1200px) {
   .partner__title {
     padding: 0 64px;
-    margin-top: 54px;
     font-size: 25px;
   }
 }
 
 .partner__text {
   margin: 10px 0 45px;
-  padding: 0 20px 0;
 }
 
 @media (max-width: 1200px) {
