@@ -242,12 +242,6 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .header__links {
-    display: none;
-  }
-}
-
 .header__link {
   position: relative;
 }
@@ -282,6 +276,12 @@ button {
 @media (max-width: 992px) {
   .header a {
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header a:not(:last-child) {
+    display: none;
   }
 }
 
@@ -878,15 +878,17 @@ button {
 .features__firstImg {
   width: 100%;
   max-width: 639px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 992px) {
   .features__firstImg {
-    margin-bottom: 50px;
+    padding: 0 20px 50px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .features__firstImg {
     display: none;
   }
@@ -899,7 +901,7 @@ button {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .features__shape {
     top: 20px;
     width: 200px;
@@ -910,7 +912,7 @@ button {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .features__slider {
     display: block;
   }
@@ -951,7 +953,7 @@ button {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .features__slider__navContainer {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1089,9 +1091,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -1119,11 +1121,12 @@ button {
   .partner__img {
     right: 40px;
     position: relative;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
 .partner__img img {
-  max-width: 833px;
   width: 100%;
 }
 
@@ -1133,13 +1136,13 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  padding: 0 20px 0 100px;
-  margin-top: 54px;
+  margin: 54px 20px 0 100px;
+  max-width: 630px;
 }
 
 @media (max-width: 1200px) {
   .partner__description {
-    padding: 0 40px 0;
+    margin: 54px 40px 0;
   }
 }
 

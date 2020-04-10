@@ -3,8 +3,8 @@ $(document).ready(function () {
   // Tiny Slider https://github.com/ganlanyuan/tiny-slider
   var slider = tns({
     container: '.features__slider',
-    items: 2,
-    center: true,
+    items: 1,
+    edgePadding: 80,
     loop: false,
     swipeAngle: false,
     speed: 400,
@@ -12,7 +12,7 @@ $(document).ready(function () {
     navPosition: "bottom",
     controls: false,
     arrowKeys: true,
-    gutter: 40,
+    gutter: 32,
     navAsThumbnails: true,
     navContainer: ".features__slider__navContainer",
   });

@@ -24,11 +24,6 @@
     }
   }
 
-  &__links {
-    @include md {
-      display: none;
-    }
-  }
   &__link {
     position: relative;
     &--active {
@@ -56,6 +51,11 @@
     }
     @include lg {
       margin-left: 10px;
+    }
+    &:not(:last-child) {
+      @include md {
+        display: none;
+      }
     }
   }
 }
@@ -397,10 +397,11 @@
   &__firstImg {
     width: 100%;
     max-width: 639px;
+    box-sizing: border-box;
     @include lg {
-      margin-bottom: 50px;
+      padding: 0 20px 50px;
     }
-    @include md {
+    @include sm {
       display: none;
     }
   }
@@ -409,14 +410,14 @@
     right: 0px;
     top: 120px;
     z-index: -1;
-    @include md {
+    @include sm {
       top: 20px;
       width: 200px;
     }
   }
   &__slider {
     display: none;
-    @include md {
+    @include sm {
       display: block;
     }
     &__navContainer {
@@ -445,7 +446,7 @@
           opacity: 1;
         }
       }
-      @include md {
+      @include sm {
         display: flex !important;
       }
     }
@@ -537,7 +538,7 @@
   opacity: 0;
   margin-top: 180px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   @include xl {
     flex-direction: column;
   }
@@ -550,20 +551,20 @@
     @include xl {
       right: 40px;
       position: relative;
+      align-self: flex-start;
     }
     img {
-      max-width: 833px;
       width: 100%;
     }
   }
   &__description {
     box-sizing: border-box;
     flex: 0 1 50%;
-    padding: 0 20px 0 100px;
-    margin-top: 54px;
+    margin: 54px 20px 0 100px;
+    max-width: 630px;
 
     @include xl {
-      padding: 0 40px 0;
+      margin: 54px 40px 0;
     }
   }
   &__title {
